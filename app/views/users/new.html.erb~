@@ -1,0 +1,11 @@
+<h1>
+<%= image_tag("prdonebetter.png", :alt => "PR. Done better.") %>
+</h1>
+
+<%= form_for(@user) do |f| %>
+  <div class="field">
+    <%= f.text_field :email, :value => "example@domain.com" %>
+  </div>
+<% end %>
+
+<%= link_to "Join the waiting list", success_path, :class => "signup_button round" %>
